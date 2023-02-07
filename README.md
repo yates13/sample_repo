@@ -3,7 +3,7 @@
 
 
 This repository is a sample repository for course github demonstrations. 
-The scripts used in were generated for a disseration project. 
+The scripts used within were generated for a disseration project. 
 
 
 
