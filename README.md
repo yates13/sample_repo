@@ -16,10 +16,10 @@ ADD each of your group members as collaborators in the repository settings
 
 EVERYONE IN THE GROUP - Clone this repository locally.
 
-For this demonstration we are going to make changes to the scripts locally
+For this demonstration we are going to make changes to the scripts and `README.md` locally
 and incorporate those changes into your forked remote repository.
 
-
+Don't remember markdown? [Here's a cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 ## Personal Change Log
 Use the space below to discuss the changes you made.
 
