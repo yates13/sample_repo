@@ -1,17 +1,6 @@
 #! /bin/bash
 
-#SBATCH -J DpulexCaloric_mapreads
-#SBATCH -t 4-00:00:00
-#SBATCH -N 1
-#SBATCH -n 18
-#SBATCH -o %x-%A-%a.out
-#SBATCH -e %x-%A-%a.err
-#SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=adc0032@auburn.edu
-#SBATCH --array=1-10
-
-# %x = job name, %j = job id, %A = array job id, %a = array task id
-
+## UPDATE THE FIRST THREE VARIABLES BASED ON YOUR INFORMATION
 
 ## Variables: data(dd), working(wd), and save(sd) directory; reference(ref), metadata(met), jobfile(jf), reference prefix(rfp) 
 dd="/home/adc0032/DpulexCaloricWD/Data" # may exclude because I will probably make this in script
@@ -32,13 +21,16 @@ else
 	cd ${wd}
 fi
 
+## UPDATE THIS VARIABLE ASSIGNMENT TO A SINGLE SAMPLE ID FROM THE LIST: SRR6819014, SRR6819015, SRR6819016, SRR6819017
 
 # sample pulled from array task id (this should be the number of samples you have on your jf list and should be specified in the #SBATCH header)
 sm=$( head -n ${SLURM_ARRAY_TASK_ID} ${jf} | tail -n 1)
 
+## UPDATE THIS VARIABLE TO RUN A SINGLE MAPPER- PICK ONE FROM BELOW
 # array of mappers
 mappers=(hisat2 star)
 
+## UPDATE THIS TO SUBMIT THE CORRECT MAPPER SCRIPT BASED ON YOUR MAPPERS VARIABLE
 # run trimmed sample reads through hisat2 and through star
 printf '%s\n' "${mappers[@]}" | parallel "sh ~/workflow/run_{}.sh ${sm} ${wd}"
 
