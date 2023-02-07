@@ -20,10 +20,8 @@ For this demonstration we are going to make changes to the scripts locally
 and incorporate those changes into your forked remote repository.
 
 
-Use the space below to discuss the changes you made:
-
-
-### Personal Change Log
+## Personal Change Log
+Use the space below to discuss the changes you made.
 
 
 ## Contributions
