@@ -20,13 +20,14 @@ For this demonstration we are going to make changes to the scripts and `README.m
 and incorporate those changes into your forked remote repository.
 
 Don't remember markdown? [Here's a cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
 ## Personal Change Log
-Use the space below to discuss the changes you made.
+
 
 
 ## Contributions
  
-Use this space to list group members names, contributions, and link github pages. 
+ 
 
 ### Group Information (Group Members)
 
