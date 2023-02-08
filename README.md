@@ -30,8 +30,8 @@ Don't remember markdown? [Here's a cheat sheet](https://github.com/adam-p/markdo
  
 
 ### Group Information (Group Members)
-Hannah Almquist
-Taylor Mckibben
-Kayci Messerly
-Gabriel Silva
+Hannah Almquist,
+Taylor Mckibben,
+Kayci Messerly,
+Gabriel Silva,
 Shawn Yates
